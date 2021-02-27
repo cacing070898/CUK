@@ -1,5 +1,3 @@
-// const { format } = require("date-and-time");
-// const { utc } = require("moment");
 require("dotenv").config();
 module.exports = async (client) =>{
     const guild = client.guilds.cache.get(process.env.guild);
@@ -40,5 +38,6 @@ module.exports = async (client) =>{
      
         console.log('Updating Date');
 
-    }, 43200000); // 12 hours 
+    // }, 43200000); // 12 hours 
+    }, 5000 );
 }

@@ -11,11 +11,11 @@ module.exports = async (client) =>{
         let hour = date_ob.getHours();
         let minute = date_ob.getMinutes();
 
-        const jam = "🕐 "+hour+":"+minute;
+        const jam = "🕐 "+hour+" : "+minute;
 
         const channeltime = guild.channels.cache.get(process.env.chntime);
         channeltime.setName(`${jam}`);
         console.log('Updating Time');
 
-    }, 30000); // 1 minute 
+    }, 10000); // 10 sec 
 }
